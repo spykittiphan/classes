@@ -15,5 +15,9 @@ class Common {
       return (floor((time()-$then)/31556926)); 
     }
     
+    public static function getPutdayFormat($putdate) {
+	    $then = explode("-", $putdate); 
+      return ($then[2].'-'.$then[1].'-'.$then[0]);
+    }
     
 }
